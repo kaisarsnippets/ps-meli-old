@@ -1,0 +1,82 @@
+====== ESPAÑOL =========================================================
+
+== Añadir Información de MercadoLibre al Catálogo de Productos ==
+
+* Ve a 'controllers/admin/AdminProductsController.php'
+* Añade un nuevo bloque field_list como se detalla a continuación.
+
+$this->fields_list['meli_data'] = array(
+	'title' => $this->l('MercadoLibre'),
+	'orderby' => false,
+	'search' => true,
+	'class' => 'm4p-meli-data',
+);
+
+* Para buscar la línea donde añadirlo, busca el texto "$this->fields_list['active']"
+* Debería quedar algo así:
+
+$this->fields_list['active'] = array(
+	'title' => $this->l('Status'),
+	'active' => 'status',
+	'filter_key' => $alias.'!active',
+	'align' => 'text-center',
+	'type' => 'bool',
+	'class' => 'fixed-width-sm',
+	'orderby' => false
+);
+
+$this->fields_list['meli_data'] = array(
+	'title' => $this->l('MercadoLibre'),
+	'orderby' => false,
+	'search' => true,
+	'class' => 'm4p-meli-data',
+);
+
+* Guárdalo y listo! :)
+
+* Si desinstalas el módulo, borra est agregado.
+
+========================================================================
+
+====== ENGLISH =========================================================
+
+== Add MercadoLibre Info to Product List ==
+
+* Go to 'controllers/admin/AdminProductsController.php'
+* Add a new field_list block as follows.
+
+$this->fields_list['meli_data'] = array(
+	'title' => $this->l('MercadoLibre'),
+	'orderby' => false,
+	'search' => true,
+	'class' => 'm4p-meli-data',
+);
+
+* To find the line in which the code should be added, search for the text "$this->fields_list['active']"
+* The code sould look like this:
+
+$this->fields_list['active'] = array(
+	'title' => $this->l('Status'),
+	'active' => 'status',
+	'filter_key' => $alias.'!active',
+	'align' => 'text-center',
+	'type' => 'bool',
+	'class' => 'fixed-width-sm',
+	'orderby' => false
+);
+
+
+$this->fields_list['meli_data'] = array(
+	'title' => $this->l('MercadoLibre'),
+	'orderby' => false,
+	'search' => true,
+	'class' => 'm4p-meli-data',
+);
+
+
+
+* Save and that's it! :)
+
+* If you uninstall the module, delete this modification.
+
+========================================================================

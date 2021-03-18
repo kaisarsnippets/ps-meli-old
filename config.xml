@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>mercadolibre</name>
+	<displayName><![CDATA[MercadoLibre]]></displayName>
+	<version><![CDATA[1.2.2]]></version>
+	<description><![CDATA[MeLi - MercadoLibre Integration Module]]></description>
+	<author><![CDATA[KaisarCode]]></author><author_uri><![CDATA[http://m4p.kaisarcode.com/]]></author_uri>
+	<tab><![CDATA[market_place]]></tab>
+	<confirmUninstall><![CDATA[Are you sure? You will lose all the data regarding to MercadoLibre.]]></confirmUninstall>
+	<is_configurable>1</is_configurable>
+	<need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>

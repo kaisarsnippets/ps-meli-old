@@ -1,0 +1,173 @@
+/**
+* 2015 KaisarCode
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the Academic Free License (AFL 3.0)
+* that is bundled with this package in the file LICENSE.txt.
+* It is also available through the world-wide-web at this URL:
+* http://opensource.org/licenses/afl-3.0.php
+* If you did not receive a copy of the license and are unable to
+* obtain it through the world-wide-web, please send an email
+* to license@prestashop.com so we can send you a copy immediately.
+*
+* DISCLAIMER
+*
+* Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+* versions in the future. If you wish to customize PrestaShop for your
+* needs please refer to http://www.prestashop.com for more information.
+*
+*  @author    KaisarCode <kaisar@kaisarcode.com>
+*  @copyright 2015 KaisarCode.com
+*  @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+*/
+
+/**
+ * Colors
+ * */
+.color-orange{color:#F07746!important;}
+.color-link{color:#00aff0!important;}
+.color-error{color:#A94442!important;}
+.color-meli{color:#FFE600!important;}
+
+/**
+ * Lists
+ * */
+.list-block{padding:0;margin:0;}
+.list-block li{display:block;padding:0;margin:0;}
+
+/**
+ * Icons
+ * */
+.head-icon{font-size:3rem;}
+.panel-header-control-right {
+    cursor: pointer;
+    position: absolute;
+    right: 2px;
+    top: 2px;
+}
+.panel-header-control-right.collapsed .hidden{display:inline!important;visibility:visible!important;}
+.panel-header-control-right.collapsed .visible{display:none!important;visibility:hidden!important;}
+
+/**
+ * Buttons
+ * */
+.btn-large{
+    font-size: 18px!important;
+    padding: 8px 16px!important;
+}
+ 
+ /**
+  * Boxes
+  * */
+.highlight{
+    padding:4px 8px!important;
+}
+
+/**
+ * Elements Enhancement
+ * */
+.nav-tabs a:focus{
+    outline:0;
+    border:0;
+}
+.panel.tabbed-panel {
+    border-radius: 0 5px 5px !important;
+}
+.panel.tabbed-panel .tab-pane{
+    display:none;
+}
+.panel.tabbed-panel .tab-pane.active{
+    display: block;
+}
+
+
+/**
+ * VENDOR LIBRARIES CUSTOMIZATION
+ * */
+ 
+/**
+* ZeroClipboard
+* */
+.clip_button {
+text-align: center;
+border: 1px solid black;
+background-color: #ccc;
+margin: 10px;
+padding: 10px;
+}
+.clip_button.zeroclipboard-is-hover { background-color: #eee; }
+.clip_button.zeroclipboard-is-active { background-color: #aaa; }
+ 
+/**
+ * OrangeTree
+ * */
+.kc-tree,
+.kc-tree ul {
+  list-style-type: none;
+  -webkit-padding-start: 10px !important;
+}
+
+.kc-tree li {
+  font-size: 13px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  overflow-wrap: break-word;
+}
+.kc-tree-branch{
+    cursor:pointer;
+}
+
+.kc-tree li>span:first-child { margin-right: 10px; }
+
+.kc-tree-title {
+    left: -25px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.kc-tree-title input{
+    margin:0!important;
+    cursor:pointer!important;
+}
+
+.kc-tree-title label {
+    cursor: pointer !important;
+    left: -25px;
+    padding-left: 25px;
+    position: relative;
+    top: -2px;
+}
+
+/**
+ * Dropzone
+ * */
+.dropzone{
+    background-image:url(../../img/bg/bg-icon-cloud-upload.png)!important;
+    min-height:200px!important;
+    background-position:center!important;
+    background-repeat:no-repeat!important;
+}
+.dropzone .dz-preview .dz-details, .dropzone-previews .dz-preview .dz-details {
+    height: auto!important;
+    padding: 0!important;
+    width: auto!important;
+}
+.dz-details{
+    display:none!important;
+}
+.dropzone a.dz-remove, .dropzone-previews a.dz-remove{
+    margin-top:5px!important;
+}
+.dz-image {
+    height: 110px !important;
+    overflow: hidden !important;
+    width: 110px !important;
+}
+.dz-image > img {
+    height: auto !important;
+    width: 100% !important;
+}
+.dropzone .dz-default.dz-message{
+    display:none!important;
+}
